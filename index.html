@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            scroll-behavior: smooth;
+            padding-top: 70px;
+            /* Add space for fixed navbar */
+        }
+
+        .section1 {
+            background-color: black;
+            padding: 100px 0 50px 0;
+            /* Add padding to hero section */
+        }
+
+        .section2 {
+            background-color: #011717;
+            padding: 100px 0 50px 0;
+            /* Add consistent padding */
+        }
+
+        .job-role {
+            color: #968fff;
+        }
+
+        nav {
+            border-bottom: 2px solid #0d4256;
+        }
+
+        .navbar {
+
+            margin-bottom: 0;
+            padding: 20px 0;
+        }
+
+        .navbar-nav {
+            margin-bottom: 0;
+        }
+
+        .navbar-brand {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .navbar-nav .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: #1db7ef;
+            transition: width 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .rounded-circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            /* This crops and fills the circle without stretching */
+            object-position: top;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+
+        .icon {
+            color: #1a73e8;
+            margin-right: 0.5rem;
+        }
+
+        .projects {
+            min-height: 100vh;
+            padding: 80px 0;
+        }
+
+        .card {
+            transition: transform 0.2s;
+            background-color: rgba(10, 10, 15, 0.8);
+            color: #cccccc;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .all-icons a {
+            font-size: 30px;
+            margin: 10px 15px;
+            color: #1a73e8;
+            transition: color 0.3s;
+        }
+
+        .all-icons a:hover {
+            color: white;
+        }
+
+        .imgIcon {
+            width: 20px;
+            height: 20px;
+            margin-right: 4px;
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #011d24;
+            margin-top: 0;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="text-light">
+
+    <!-- Navbar -->
+    <nav class="section2 navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="#hero"><span style="font-size: 30px;">$</span>OWHOM <span style="font-size: 30px; font-weight: bold;">G</span>HOSH</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section1" id="hero">
+        <div class="container text-center">
+            <h1 style="font-size: 100px;" class="my-2 text-info fw-bolder">Sowhom Ghosh</h1>
+            <h4 class="job-role mb-4">Full Stack Developer | MERN Stack</h4>
+            <div class="mx-auto" style="max-width: 600px;">
+                <p class="fw-light fs-5">I'm a Full Stack developer with a experience of hands-on
+                    projects that showcase my skills in building responsive, user-focused web applications.
+                    Specializing in React, Node.js, and MongoDB to build real world applications.
+                </p>
+            </div>
+            <div class="d-flex justify-content-center my-4 gap-3">
+                <a class="btn btn-info fs-4" href="#contact">Contact Me</a>
+                <a class="btn btn-dark fs-4" href="./Resume/Sowhom Ghosh.pdf" download="Sowhom Ghosh-Resume">Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section2" id="projects">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1>Featured <span style="color: #1a73e8;">Projects</span></h1>
+                <p class="fs-4">A showcase of my development skills and technical expertise</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border rounded border-primary h-100">
+                        <img src="./Images/Anvaya.png" class="card-img-top" alt="Anvaya CRM" />
+                        <div class="card-body">
+                            <h5 class="card-title text-info">Anvaya CRM</h5>
+                            <p class="card-text fs-5">A modern CRM application designed to streamline lead management
+                                for sales teams.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-2">
+                                <span class="p-1 border border-primary rounded card-text">React</span>
+                                <span class="p-1 border border-primary rounded card-text">Bootstrap</span>
+                                <span class="p-1 border border-primary rounded card-text">Node.js</span>
+                                <span class="p-1 border border-primary rounded card-text">Express</span>
+                                <span class="p-1 border border-primary rounded card-text">MongoDB</span>
+                                <span class="p-1 border border-primary rounded card-text">recharts</span>
+                            </div>
+                            <div class="d-flex gap-5 my-4" style="margin-top: 5px;">
+                                <span><a href="https://major-project2-frontend-eight.vercel.app"
+                                        class="text-decoration-none text-light" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-solid fa-eye mx-1"></i>Demo</a></span>
+                                <span><a href="https://github.com/Sowhom638/MajorProject2-frontend"
+                                        class="text-decoration-none text-light" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-solid fa-code mx-1"></i>Code</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border rounded border-primary h-100">
+                        <img src="./Images/MyShoppingApp.png" class="card-img-top" alt="MyShoppingApp" />
+                        <div class="card-body">
+                            <h5 class="card-title text-info">MyShoppingApp</h5>
+                            <p class="card-text fs-5">A e-commerce app where you can search products by category or name, we can filter the product list using category, We can add and remove product from cart and wishlist.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-2">
+                                <span class="p-1 border border-primary rounded card-text">React</span>
+                                <span class="p-1 border border-primary rounded card-text">Bootstrap</span>
+                                <span class="p-1 border border-primary rounded card-text">Node.js</span>
+                                <span class="p-1 border border-primary rounded card-text">Express</span>
+                                <span class="p-1 border border-primary rounded card-text">MongoDB</span>
+                            </div>
+                            <div class="d-flex gap-5 my-4" style="margin-top: 5px;">
+                                <span><a href="https://major-project-frontend-pi.vercel.app"
+                                        class="text-decoration-none text-light" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-solid fa-eye mx-1"></i>Demo</a></span>
+                                <span><a href="https://github.com/Sowhom638/MajorProject-frontend"
+                                        class="text-decoration-none text-light" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-solid fa-code mx-1"></i>Code</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border rounded border-primary h-100">
+                        <img src="./Images/MeetUp.png" class="card-img-top" alt="MeetUp" />
+                        <div class="card-body">
+                            <h5 class="card-title text-info">Meetup App</h5>
+                            <p class="card-text fs-5">A dynamic event discovery platform where users can browse, search, and explore upcoming meetups and events.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-2">
+                                <span class="p-1 border border-primary rounded card-text">React</span>
+                                <span class="p-1 border border-primary rounded card-text">Bootstrap</span>
+                                <span class="p-1 border border-primary rounded card-text">Node.js</span>
+                                <span class="p-1 border border-primary rounded card-text">Express</span>
+                                <span class="p-1 border border-primary rounded card-text">MongoDB</span>
+                            </div>
+                            <div class="d-flex gap-5 my-4" style="margin-top: 5px;">
+                                <span><a href="https://bi-assignment-1-meetup-app.vercel.app"
+                                        class="text-decoration-none text-light" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-solid fa-eye mx-1"></i>Demo</a></span>
+                                <span><a href="https://github.com/Sowhom638/BI_Assignment-1-Frontend"
+                                        class="text-decoration-none text-light" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-solid fa-code mx-1"></i>Code</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section1" id="skills">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1>Technical <span style="color: #1a73e8;">Skills</span></h1>
+                <p class="fs-4">A comprehensive overview of my technical expertise and capabilities</p>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center">
+                <span class="p-2 border border-primary rounded me-2 mb-2 card-text"><i
+                        class="fa-brands fa-react mx-1"></i>React</span>
+                <span class="p-2 border border-primary rounded me-2 mb-2 card-text d-flex">
+                    <div class="imgIcon">
+                        <img style="width: 100%; height: 100%; object-fit: cover; overflow: hidden;"
+                            src="./Images/Tailwind CSS.png" alt="">
+                    </div>Tailwind CSS
+                </span>
+                <span class="p-2 border border-primary rounded me-2 mb-2 card-text"><i
+                        class="fa-brands fa-bootstrap mx-1"></i>Bootstrap</span>
+                <span class="p-2 border border-primary rounded me-2 mb-2 card-text"><i
+                        class="fa-brands fa-node-js mx-1"></i>Node.js</span>
+                <span class="p-2 border border-primary rounded me-2 mb-2 card-text d-flex">
+                    <div class="imgIcon">
+                        <img style="width: 100%; height: 100%; object-fit: cover; overflow: hidden;"
+                            src="./Images/Express.png" alt="">
+                    </div>Express
+                </span>
+                <span class="p-2 border border-primary rounded me-2 mb-2 card-text d-flex">
+                    <div class="imgIcon">
+                        <img style="width: 100%; height: 100%; object-fit: cover; overflow: hidden;"
+                            src="./Images/MongoDB.png" alt="">
+                    </div>MongoDB
+                </span>
+                <span class="p-2 border border-primary rounded me-2 mb-2 card-text d-flex">
+                    <div class="imgIcon">
+                        <img style="width: 100%; height: 100%; object-fit: cover; overflow: hidden;"
+                            src="./Images/Vercel.png" alt="">
+                    </div>Vercel
+                </span>
+                <span class="p-2 border border-primary rounded me-2 mb-2 card-text"><i
+                        class="fa-brands fa-git-alt mx-1"></i>Git</span>
+                <span class="p-2 border border-primary rounded me-2 mb-2 card-text"><i
+                        class="fa-brands fa-github mx-1"></i>GitHub</span>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+         <section class="section2" id="contact">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1>Contact <span style="color: #1a73e8;">Me</span></h1>
+                <p class="fs-4">Let's collaborate on something amazing together</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border rounded border-primary h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-info"><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>Email</h4>
+                            <p class="card-text fs-5"><a class="text-decoration-none text-light" href="mailto:ghoshsowhom638@gmail.com">ghoshsowhom638@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border rounded border-primary h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-info"><i class="fa-brands fa-github" style="margin-right: 10px;"></i>GitHub</h4>
+                            <p class="card-text fs-5"><a class="text-decoration-none text-light" href="https://github.com/Sowhom638" target="_blank">Follow on GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="position-fixed bottom-0 end-0"><a  class="btn btn-info m-3" href="#hero"><i class="fa-solid fa-arrow-up"></i></a></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
