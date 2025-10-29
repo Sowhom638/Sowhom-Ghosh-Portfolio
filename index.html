@@ -13,19 +13,16 @@
         body {
             scroll-behavior: smooth;
             padding-top: 70px;
-            /* Add space for fixed navbar */
         }
 
         .section1 {
             background-color: black;
             padding: 100px 0 50px 0;
-            /* Add padding to hero section */
         }
 
         .section2 {
             background-color: #011717;
             padding: 100px 0 50px 0;
-            /* Add consistent padding */
         }
 
         .job-role {
@@ -51,32 +48,12 @@
             padding-bottom: 0;
         }
 
-        .navbar-nav .nav-link {
-            position: relative;
-            transition: color 0.3s ease;
-        }
-
-        .navbar-nav .nav-link::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -3px;
-            width: 0;
-            height: 2px;
-            background-color: #1db7ef;
-            transition: width 0.3s ease;
-        }
-
-        .navbar-nav .nav-link:hover::after {
-            width: 100%;
-        }
 
         .rounded-circle {
             width: 300px;
             height: 300px;
             border-radius: 50%;
             object-fit: cover;
-            /* This crops and fills the circle without stretching */
             object-position: top;
             overflow: hidden;
             margin-bottom: 20px;
@@ -156,7 +133,7 @@
             <div class="mx-auto" style="max-width: 600px;">
                 <p class="fw-light fs-5">I'm a Full Stack developer with a experience of hands-on
                     projects that showcase my skills in building responsive, user-focused web applications.
-                    Specializing in React, Node.js, and MongoDB to build real world applications.
+                    Specializing in React, Express.js, Node.js, and MongoDB to build real world applications.
                 </p>
             </div>
             <div class="d-flex justify-content-center my-4 gap-3">
@@ -298,9 +275,6 @@
                 <span class="p-2 border border-primary rounded me-2 mb-2 card-text"><i
                         class="fa-brands fa-github mx-1"></i>GitHub</span>
             </div>
-
-
-
         </div>
     </section>
 
@@ -336,7 +310,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+        <p>Built with ❤️ using HTML, CSS, Bootstrap.</p>
     </footer>
 
     <!-- Bootstrap JS -->
