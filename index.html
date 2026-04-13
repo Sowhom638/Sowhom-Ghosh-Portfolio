@@ -1,325 +1,382 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="./Images/portfolio.svg" />
-    <title>Sowhom Ghosh</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            scroll-behavior: smooth;
-            padding-top: 70px;
-        }
-
-        .section1 {
-            background-color: black;
-            padding: 100px 0 50px 0;
-        }
-
-        .section2 {
-            background-color: #011717;
-            padding: 100px 0 50px 0;
-        }
-
-        .job-role {
-            color: #968fff;
-        }
-
-        nav {
-            border-bottom: 2px solid #0d4256;
-        }
-
-        .navbar {
-
-            margin-bottom: 0;
-            padding: 20px 0;
-        }
-
-        .navbar-nav {
-            margin-bottom: 0;
-        }
-
-        .navbar-brand {
-            padding-top: 0;
-            padding-bottom: 0;
-        }
-
-
-        .rounded-circle {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: top;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            min-height: 100vh;
-        }
-
-
-        .icon {
-            color: #1a73e8;
-            margin-right: 0.5rem;
-        }
-
-        .projects {
-            min-height: 100vh;
-            padding: 80px 0;
-        }
-
-        .card {
-            transition: transform 0.2s;
-            background-color: rgba(10, 10, 15, 0.8);
-            color: #cccccc;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .all-icons a {
-            font-size: 30px;
-            margin: 10px 15px;
-            color: #1a73e8;
-            transition: color 0.3s;
-        }
-
-        .all-icons a:hover {
-            color: white;
-        }
-
-        .imgIcon {
-            width: 20px;
-            height: 20px;
-            margin-right: 4px;
-
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #011d24;
-            margin-top: 0;
-            color: white;
-        }
-    </style>
-</head>
-
-<body class="text-light">
+    <link rel="stylesheet" href="style.css" />
+    <title>Sowhom Ghosh - Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+      <div class="loader-content">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Loading Portfolio</div>
+      </div>
+    </div>
 
     <!-- Navbar -->
-    <nav class="section2 navbar navbar-expand-lg fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-success" href="#hero"><span style="font-size: 30px;">$</span>OWHOM <span style="font-size: 30px; font-weight: bold;">G</span>HOSH</a>
+    <nav class="navbar" id="navbar">
+      <a href="#" class="nav-logo"><span>$</span>OWHOM <span>G</span>HOSH</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="section1" id="hero">
-        <div class="container text-center">
-            <h1 style="font-size: 80px;" class="my-2 text-info fw-bolder">Sowhom Ghosh</h1>
-            <h4 class="job-role mb-4">Full Stack Developer | MERN Stack</h4>
-            <div class="mx-auto" style="max-width: 600px;">
-                <p class="fw-light fs-5">I'm a Full Stack developer with a experience of hands-on
-                    projects that showcase my skills in building responsive, user-focused web applications.
-                    Specializing in React, Express.js, Node.js, and MongoDB to build real world applications.
-                </p>
+    <section class="hero" id="home">
+        <!-- Floating Gradient Blobs Background -->
+<div class="hero-bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-3"></div>
+</div>
+      <!-- Face dots decoration -->
+      <div class="face-dots">
+        <div class="face-dot"></div>
+        <div class="face-dot"></div>
+        <div class="face-dot"></div>
+      </div>
+
+      <!-- Left Column -->
+      <div class="hero-left">
+        <!-- Profile Card -->
+        <div class="profile-card fade-left">
+          <span class="profile-name-vertical">SOWHOM GHOSH</span>
+          <div class="skill-badges">
+            <span class="skill-badge react">React</span>
+            <span class="skill-badge node">Node</span>
+            <span class="skill-badge mongo">Mongo</span>
+            <span class="skill-badge express">Express</span>
+          </div>
+          <div class="profile-photo-wrapper">
+            <!-- Replace with your actual photo -->
+            <img
+              src="./Images/profile.jpg"
+              alt="Sowhom Ghosh"
+              onerror="
+                this.style.display = 'none';
+                this.parentElement.innerHTML =
+                  '<div class=\'profile-placeholder\'><i class=\'fas fa-user\'></i><span>Your Photo</span></div>';
+              "
+            />
+          </div>
+          <div class="software-row">
+            <div class="sw-icon">M</div>
+            <div class="sw-icon">E</div>
+            <div class="sw-icon">R</div>
+            <div class="sw-icon">N</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="hero-right">
+        <!-- Greeting -->
+        <div class="greeting fade-right">
+          <h1>
+            <span class="hello-outline">Hello.</span>
+            <span class="im-name"
+              >I'm <span class="cartoon-name">Sowhom</span>
+              <span class="exclamation">!</span></span
+            >
+          </h1>
+          <div class="job-role">Full Stack Developer | MERN Stack</div>
+          <p class="greeting-desc">
+            I'm a Full Stack developer with hands-on experience in projects that
+            showcase my skills in building responsive, user-focused web
+            applications. Specializing in React, Express.js, Node.js, and
+            MongoDB to build real world applications.
+          </p>
+        </div>
+    </section>
+    <section class="details">
+        <div class="details-left">
+            <!-- Contact -->
+        <div class="contact-section fade-left" style="transition-delay: 0.2s">
+          <h3 class="section-title"><span class="outline">CON</span>TACT</h3>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <a href="mailto:ghoshsowhom638@gmail.com"
+                >ghoshsowhom638@gmail.com</a
+              >
             </div>
-            <div class="d-flex justify-content-center my-4 gap-3">
-                <a class="btn btn-info fs-4" href="#contact">Contact Me</a>
-                <a class="btn btn-dark fs-4" href="./Resume/Sowhom Ghosh.pdf" download="Sowhom Ghosh-Resume">Resume</a>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <a href="https://github.com/Sowhom638" target="_blank"
+                >Sowhom638</a
+              >
             </div>
+          </div>
+          <a
+            href="./Resume/Sowhom Ghosh.pdf"
+            download="Sowhom Ghosh-Resume"
+            class="behance-link"
+          >
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+
+        <!-- Software Skills -->
+        <div class="fade-left" style="transition-delay: 0.3s">
+          <h3 class="section-title"><span class="outline">SOFT</span>WARE</h3>
+          <div class="software-grid">
+            <div class="software-item">
+              <div class="software-dot"></div>
+              <span>React</span>
+            </div>
+            <div class="software-item">
+              <div class="software-dot"></div>
+              <span>Node.js</span>
+            </div>
+            <div class="software-item">
+              <div class="software-dot"></div>
+              <span>Express</span>
+            </div>
+            <div class="software-item">
+              <div class="software-dot"></div>
+              <span>MongoDB</span>
+            </div>
+            <div class="software-item">
+              <div class="software-dot"></div>
+              <span>Tailwind CSS</span>
+            </div>
+            <div class="software-item">
+              <div class="software-dot"></div>
+              <span>Bootstrap</span>
+            </div>
+            <div class="software-item">
+              <div class="software-dot"></div>
+              <span>Git</span>
+            </div>
+            <div class="software-item">
+              <div class="software-dot"></div>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="details-right">
+            <!-- Experience -->
+        <div
+          class="experience-section fade-right"
+          style="transition-delay: 0.3s"
+        >
+          <h3 class="section-title">EXPERIENCE</h3>
+          <div class="exp-item">
+            <div class="exp-period">2023-2024</div>
+            <div class="exp-company">FREELANCE PROJECTS</div>
+            <ul class="exp-list">
+              <li>Developed Trai - AI-powered trip planning application</li>
+              <li>
+                Built KaviosPix - Image management system with cloud storage
+              </li>
+              <li>
+                Created Anvaya CRM - Lead management system for sales teams
+              </li>
+              <li>
+                Implemented Google OAuth, JWT authentication, RESTful APIs
+              </li>
+            </ul>
+          </div>
+          <div class="exp-item">
+            <div class="exp-period">2022-2023</div>
+            <div class="exp-company">TECHNICAL SKILLS</div>
+            <ul class="exp-list">
+              <li>Frontend: React, Tailwind CSS, Bootstrap</li>
+              <li>Backend: Node.js, Express, MongoDB</li>
+              <li>Deployment: Vercel, Git/GitHub</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <a
+          href="#contact"
+          class="cta-button fade-right"
+          style="transition-delay: 0.4s"
+        >
+          <span>LET'S</span>
+          WORK TOGETHER
+        </a>
+      </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="section2" id="projects">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h1>Featured <span style="color: #1a73e8;">Projects</span></h1>
-                <p class="fs-4">A showcase of my development skills and technical expertise</p>
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="projects">
+      <div class="portfolio-header fade-up">
+        <h2>Featured <span style="color: var(--orange)">Projects</span></h2>
+        <p>A showcase of my development skills and technical expertise</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card fade-up" style="transition-delay: 0.1s">
+          <div class="portfolio-card-inner">
+            <i class="fas fa-plane-departure"></i>
+            <h3>Trai</h3>
+            <p>AI Trip Planner</p>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Google OAuth</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Gemini API</span>
             </div>
-            <div class="row g-4">
-                                <div class="col-md-4">
-                    <div class="card border rounded border-primary h-100">
-                        <img src="./Images/Trai.png" class="card-img-top" alt="Trai" />
-                        <div class="card-body">
-                            <h5 class="card-title text-info">Trai</h5>
-                            <p class="card-text fs-5">An AI trip planner which allows users to generate personalized travel itineraries by simply entering a destination name and the number of days they plan to stay. </p>
-                            <div class="d-flex flex-wrap gap-2 mb-2">
-                                <span class="p-1 border border-primary rounded card-text">React</span>
-                                <span class="p-1 border border-primary rounded card-text">Google OAuth</span>
-                                <span class="p-1 border border-primary rounded card-text">Tailwind CSS</span>
-                                <span class="p-1 border border-primary rounded card-text">Gemini</span>
-                                <span class="p-1 border border-primary rounded card-text">Node.js</span>
-                                <span class="p-1 border border-primary rounded card-text">Express</span>
-                                <span class="p-1 border border-primary rounded card-text">MongoDB</span>
-                            </div>
-                            <div class="d-flex gap-5 my-4" style="margin-top: 5px;">
-                                <span><a href="https://trai-trip-planner-rsx8.vercel.app"
-                                        class="text-decoration-none text-light" target="_blank"
-                                        rel="noopener noreferrer"><i class="fa-solid fa-eye mx-1"></i>Demo</a></span>
-                                <span><a href="https://github.com/Sowhom638/Trai-Trip-Planner"
-                                        class="text-decoration-none text-light" target="_blank"
-                                        rel="noopener noreferrer"><i class="fa-solid fa-code mx-1"></i>Code</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border rounded border-primary h-100">
-                        <img src="./Images/KaviosPix.png" class="card-img-top" alt="KaviosPix" />
-                        <div class="card-body">
-                            <h5 class="card-title text-info">KaviosPix</h5>
-                            <p class="card-text fs-5">An API-based image management system where users can create albums, share them with others, and upload images with various metadata.</p>
-                            <div class="d-flex flex-wrap gap-2 mb-2">
-                                <span class="p-1 border border-primary rounded card-text">React</span>
-                                <span class="p-1 border border-primary rounded card-text">Google OAuth</span>
-                                <span class="p-1 border border-primary rounded card-text">Bootstrap</span>
-                                <span class="p-1 border border-primary rounded card-text">Cloudinary</span>
-                                <span class="p-1 border border-primary rounded card-text">JWT</span>
-                                <span class="p-1 border border-primary rounded card-text">Node.js</span>
-                                <span class="p-1 border border-primary rounded card-text">Express</span>
-                                <span class="p-1 border border-primary rounded card-text">MongoDB</span>
-                            </div>
-                            <div class="d-flex gap-5 my-4" style="margin-top: 5px;">
-                                <span><a href="https://kavios-pix-delta.vercel.app"
-                                        class="text-decoration-none text-light" target="_blank"
-                                        rel="noopener noreferrer"><i class="fa-solid fa-eye mx-1"></i>Demo</a></span>
-                                <span><a href=" https://github.com/Sowhom638/KaviosPix"
-                                        class="text-decoration-none text-light" target="_blank"
-                                        rel="noopener noreferrer"><i class="fa-solid fa-code mx-1"></i>Code</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border rounded border-primary h-100">
-                        <img src="./Images/Anvaya.png" class="card-img-top" alt="Anvaya CRM" />
-                        <div class="card-body">
-                            <h5 class="card-title text-info">Anvaya CRM</h5>
-                            <p class="card-text fs-5">A modern CRM application designed to streamline lead management
-                                for sales teams.</p>
-                            <div class="d-flex flex-wrap gap-2 mb-2">
-                                <span class="p-1 border border-primary rounded card-text">React</span>
-                                <span class="p-1 border border-primary rounded card-text">Bootstrap</span>
-                                <span class="p-1 border border-primary rounded card-text">Node.js</span>
-                                <span class="p-1 border border-primary rounded card-text">Express</span>
-                                <span class="p-1 border border-primary rounded card-text">MongoDB</span>
-                                <span class="p-1 border border-primary rounded card-text">recharts</span>
-                            </div>
-                            <div class="d-flex gap-5 my-4" style="margin-top: 5px;">
-                                <span><a href="https://major-project2-frontend-eight.vercel.app"
-                                        class="text-decoration-none text-light" target="_blank"
-                                        rel="noopener noreferrer"><i class="fa-solid fa-eye mx-1"></i>Demo</a></span>
-                                <span><a href="https://github.com/Sowhom638/MajorProject2-frontend"
-                                        class="text-decoration-none text-light" target="_blank"
-                                        rel="noopener noreferrer"><i class="fa-solid fa-code mx-1"></i>Code</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <i class="fas fa-eye"></i>
+            <span>View Project</span>
+            <a
+              href="https://trai-trip-planner-rsx8.vercel.app"
+              target="_blank"
+              style="color: white; margin-top: 10px; text-decoration: underline"
+              >Demo</a
+            >
+          </div>
         </div>
-    </section>
-
-    <!-- Technical Skills -->
-    <section class="section1" id="skills">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h1>Technical <span style="color: #1a73e8;">Skills</span></h1>
-                <p class="fs-4">A comprehensive overview of my technical expertise and capabilities</p>
+        <div class="portfolio-card fade-up" style="transition-delay: 0.2s">
+          <div class="portfolio-card-inner">
+            <i class="fas fa-images"></i>
+            <h3>KaviosPix</h3>
+            <p>Image Management System</p>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Google OAuth</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Cloudinary</span>
+              <span class="tech-tag">JWT</span>
             </div>
-
-            <div class="d-flex flex-wrap justify-content-center">
-                <span class="p-2 border border-primary rounded me-2 mb-2 card-text"><i
-                        class="fa-brands fa-react mx-1"></i>React</span>
-                <span class="p-2 border border-primary rounded me-2 mb-2 card-text d-flex">
-                    <div class="imgIcon">
-                        <img style="width: 100%; height: 100%; object-fit: cover; overflow: hidden;"
-                            src="./Images/Tailwind CSS.png" alt="">
-                    </div>Tailwind CSS
-                </span>
-                <span class="p-2 border border-primary rounded me-2 mb-2 card-text"><i
-                        class="fa-brands fa-bootstrap mx-1"></i>Bootstrap</span>
-                <span class="p-2 border border-primary rounded me-2 mb-2 card-text"><i
-                        class="fa-brands fa-node-js mx-1"></i>Node.js</span>
-                <span class="p-2 border border-primary rounded me-2 mb-2 card-text d-flex">
-                    <div class="imgIcon">
-                        <img style="width: 100%; height: 100%; object-fit: cover; overflow: hidden;"
-                            src="./Images/Express.png" alt="">
-                    </div>Express
-                </span>
-                <span class="p-2 border border-primary rounded me-2 mb-2 card-text d-flex">
-                    <div class="imgIcon">
-                        <img style="width: 100%; height: 100%; object-fit: cover; overflow: hidden;"
-                            src="./Images/MongoDB.png" alt="">
-                    </div>MongoDB
-                </span>
-                <span class="p-2 border border-primary rounded me-2 mb-2 card-text d-flex">
-                    <div class="imgIcon">
-                        <img style="width: 100%; height: 100%; object-fit: cover; overflow: hidden;"
-                            src="./Images/Vercel.png" alt="">
-                    </div>Vercel
-                </span>
-                <span class="p-2 border border-primary rounded me-2 mb-2 card-text"><i
-                        class="fa-brands fa-git-alt mx-1"></i>Git</span>
-                <span class="p-2 border border-primary rounded me-2 mb-2 card-text"><i
-                        class="fa-brands fa-github mx-1"></i>GitHub</span>
-            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <i class="fas fa-eye"></i>
+            <span>View Project</span>
+            <a
+              href="https://kavios-pix-delta.vercel.app"
+              target="_blank"
+              style="color: white; margin-top: 10px; text-decoration: underline"
+              >Demo</a
+            >
+          </div>
         </div>
+        <div class="portfolio-card fade-up" style="transition-delay: 0.3s">
+          <div class="portfolio-card-inner">
+            <i class="fas fa-chart-line"></i>
+            <h3>Anvaya CRM</h3>
+            <p>Lead Management System</p>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Recharts</span>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <i class="fas fa-eye"></i>
+            <span>View Project</span>
+            <a
+              href="https://major-project2-frontend-eight.vercel.app"
+              target="_blank"
+              style="color: white; margin-top: 10px; text-decoration: underline"
+              >Demo</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-         <section class="section2" id="contact">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h1>Contact <span style="color: #1a73e8;">Me</span></h1>
-                <p class="fs-4">Let's collaborate on something amazing together</p>
+    <section class="contact-section-page" id="contact">
+      <div class="contact-inner">
+        <div class="contact-info fade-left">
+          <h2>
+            Let's Work Together <span style="color: var(--orange)">!</span>
+          </h2>
+          <p>
+            Have a project in mind? I'd love to hear about it. Let's create
+            something amazing together. Feel free to reach out through any of
+            the channels below.
+          </p>
+          <div class="contact-detail-list">
+            <div class="contact-detail-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:ghoshsowhom638@gmail.com"
+                >ghoshsowhom638@gmail.com</a
+              >
             </div>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card border rounded border-primary h-100">
-                        <div class="card-body">
-                            <h4 class="card-title text-info"><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>Email</h4>
-                            <p class="card-text fs-5"><a class="text-decoration-none text-light" href="mailto:ghoshsowhom638@gmail.com">ghoshsowhom638@gmail.com</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card border rounded border-primary h-100">
-                        <div class="card-body">
-                            <h4 class="card-title text-info"><i class="fa-brands fa-github" style="margin-right: 10px;"></i>GitHub</h4>
-                            <p class="card-text fs-5"><a class="text-decoration-none text-light" href="https://github.com/Sowhom638" target="_blank">Follow on GitHub</a></p>
-                        </div>
-                    </div>
-                </div>
+            <div class="contact-detail-item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/Sowhom638" target="_blank"
+                >github.com/Sowhom638</a
+              >
             </div>
+            <div class="contact-detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Available for Remote Work</span>
+            </div>
+          </div>
         </div>
+        <form class="contact-form fade-right" onsubmit="handleSubmit(event)">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="submit-btn">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
     </section>
 
-    <div class="position-fixed bottom-0 end-0"><a  class="btn btn-info m-3" href="#hero"><i class="fa-solid fa-arrow-up"></i></a></div>
-
     <!-- Footer -->
-    <footer>
-        <p>Built with ❤️ using HTML, CSS, Bootstrap.</p>
+    <footer class="footer">
+      <div class="social-links">
+        <a href="https://github.com/Sowhom638" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:ghoshsowhom638@gmail.com"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+      <p>
+        Built with
+        <i class="fas fa-heart" style="color: var(--red-primary)"></i> using
+        HTML, CSS & JavaScript
+      </p>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Back to Top -->
+    <button
+      class="back-to-top"
+      id="backToTop"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
+    <script src="script.js"></script>
+  </body>
 </html>
