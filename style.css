@@ -327,17 +327,18 @@ body {
 }
 
 .skill-badge.react {
-    background: #61dafb;
+    background: #95e1d3;
     color: var(--dark);
 }
 .skill-badge.node {
-    background: #339933;
+    background: #ffe66d;
+    color: var(--dark);
 }
 .skill-badge.mongo {
-    background: #256326;
+    background: #f38181;
 }
 .skill-badge.express {
-    background: #1d1c1c;
+    background: #2d1b14;
 }
 
 .software-row {
