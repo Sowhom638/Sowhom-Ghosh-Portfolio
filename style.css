@@ -157,6 +157,7 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    margin-right: 20px;
 }
 
 .hamburger span {
