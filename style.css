@@ -542,7 +542,7 @@ body {
 }
 /* Cartoon Style Name */
 .cartoon-name {
-    font-family: "Fredoka One", cursive;
+    font-family: "Brush Script MT", cursive;
     color: var(--red-primary);
     font-size: 3.8rem;
     display: inline-block;
